@@ -1,21 +1,33 @@
-# greenpulse_ai
+# GreenPulse AI
 
-A new Flutter project.
+A Flutter mobile application focused on environmental sustainability.
 
-## Getting Started
+## Screens and modules
+- Authentication: login, sign up, email verification and phone OTP
+- Home and profile
+- Waste report and recycling
+- Collection points
+- AI waste scan
+- Partner companies: registration, dashboard, company details and admin
+- Citizen partner requests
 
-This project is a starting point for a Flutter application.
+## Tech stack
+- Flutter and Dart
+- Firebase
+- Local database helper
+- Separate service files for authentication, partners and phone OTP
 
-A few resources to get you started if this is your first Flutter project:
+## Project structure
+    lib/
+      main.dart
+      auth_gate.dart, auth_service.dart, phone_otp_service.dart
+      login_screen.dart, signup_screen.dart, otp_screen.dart, email_verification_screen.dart
+      home_screen.dart, profile_screen.dart
+      waste_report_screen.dart, recycling_screen.dart, collection_points_screen.dart, ai_waste_scan_screen.dart
+      partner_*.dart, company_partner_dashboard.dart, citizen_partner_requests_screen.dart
+      database_helper.dart
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-## Firebase setup
-For security, lib/firebase_options.dart and android/app/google-services.json are not included in this repository.
-To run the app, create your own Firebase project and generate them with: flutterfire configure
+## Getting started
+1. Run `flutter pub get`
+2. Create your own Firebase project and generate `lib/firebase_options.dart` and `android/app/google-services.json` with `flutterfire configure`. These two files are not included in this repository for security.
+3. Run `flutter run`
